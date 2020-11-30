@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: hsl(210, 46%, 95%);
+}
+
+h3 {
+  opacity: 90%;
+  font-size: 13px;
+}
+
+h2 {
+  opacity: 95%;
+}
+
+p {
+  opacity: 70%;
+  line-height: 1.5;
+}
+
+span {
+  opacity: 50%;
+  font-size: 12px;
+}
+
+/* Items positioning for desktop size */
+
+.testimonials {
+  display: grid;
+  padding: 12%;
+  grid-gap: 25px;
+  grid-template-columns: auto auto auto auto auto;
+  align-content: center;
+  line-height: 20px;
+}
+
+.item1 {
+  background: hsl(263, 55%, 52%);
+  grid-column: 1 / 4;
+  position: relative;
+}
+
+.item2 {
+  background: hsl(217, 19%, 35%);
+  grid-column: 4 / 5;
+}
+
+.item3 {
+  background: hsl(0, 0%, 100%);
+  grid-column: 1 / 2;
+}
+
+.item4 {
+  background: hsl(219, 29%, 14%);
+  grid-column: 2 / 5;
+}
+
+.item5 {
+  background: hsl(0, 0%, 100%);
+  grid-column: 5 / 6;
+  grid-row: 1 / 3;
+
+}
+
+/* Items styling for desktop size */
+
+.item {
+  padding: 30px;
+  border-radius: 3%;
+}
+
+.item .rounded-image {
+  border-radius: 100%;
+  width: 32px;
+  float: left;
+  margin: 0px 20px 20px 0px;
+}
+
+.colored-border-img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.quotation-image {
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+
+.item h2 {
+  padding-bottom: 20px;
+  clear: both;
+}
+
+/* Dark items */
+
+.item1, .item2, .item4 {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Light items */
+
+.item3, .item5 {
+  color: hsl(217, 19%, 35%);
+}
+
+/* Items positioning for laptop size */
+
+@media (max-width: 1200px) {
+  .testimonials {
+    grid-template-columns: auto auto;
+    align-content: center;
+  }
+
+  .item1 {
+    grid-column: 1 / 2;
+  }
+
+  .item2 {
+    grid-column: 2 / 3;
+  }
+
+  .item3 {
+    grid-column: 1 / 2;
+  }
+
+  .item4 {
+    grid-column: 2 / 3;
+  }
+
+  .item5 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+/* Items positioning/styling for tablet/mobile size */
+
+@media (max-width: 900px) {
+  .testimonials {
+    padding: 12% 5%;
+    grid-template-columns: auto;
+    align-content: center;
+  }
+
+  .item {
+    grid-column: 1 / 2;
+    border-radius: 2%;
+  }
+
+   .item5 {
+     grid-row: 5 / 6;
+   }
+
+   .quotation-image {
+     right: 20px;
+  }
+}
+/* Footer section */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
