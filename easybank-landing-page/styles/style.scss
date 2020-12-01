@@ -92,6 +92,9 @@ h3 {
 .btn:focus {
   outline: none;
 }
+
+// Styling for desktop.
+
 // Nav section.
 
 nav {
@@ -307,10 +310,14 @@ nav li:hover::after {
   nav a {
     font-size: 0.9rem;
   }
-  .dropdown-content li:hover::after {    // Hiding desktop hover effect.
+
+  // Hiding desktop hover effect.
+  .dropdown-content li:hover::after {
     opacity: 0;
   }
-  .header {                              // Header section.
+
+ // Header section.
+  .header {
       .intro-background {
         right: 0;
         bottom: 0;
@@ -322,7 +329,8 @@ nav li:hover::after {
       }
     }
 
-   .main {                                // Main section.
+// Main section.
+   .main {
       .main-heading {
         width: 50%;
       }
@@ -351,7 +359,8 @@ nav li:hover::after {
       grid-column: 2 / 3;
     }
 
-    .news .news-box {                         // News section.
+ // News section.
+    .news .news-box {
       display: grid;
       grid-template-columns: auto auto;
       justify-content: space-around;
@@ -373,7 +382,8 @@ nav li:hover::after {
       margin-right: 0 !important;
     }
 
-    .footer {                                    // Footer section.
+ // Footer section.
+    .footer {
         p {
           font-size: 0.6rem;
         }
@@ -412,7 +422,8 @@ nav li:hover::after {
     font-size: 1.5rem;
   }
 
-  .header {                              // Header section.
+// Header section.
+  .header {
       .intro-background {
         right: 0;
         bottom: 0;
@@ -425,13 +436,15 @@ nav li:hover::after {
       }
     }
 
-    .main {                                // Main section.
+// Main section.
+    .main {
       .main-heading {
         width: 60%;
       }
     }
 
-    .footer {                            // Footer section.
+// Footer section.
+    .footer {
         .footer-navbar1 {
           margin-left: 45%;
         }
@@ -447,7 +460,9 @@ nav li:hover::after {
 
 // Styling for tablet/mobile size
 @media (max-width: 700px) {
-   nav {                                 // Dropdown-menu
+
+// Dropdown-menu
+   nav {
       .dropdown-btn {
         display: block;
       }
@@ -471,7 +486,8 @@ nav li:hover::after {
       }
     }
 
-  .header {                              // Header section.
+// Header section.
+  .header {
     position: relative;
     display: inherit;
     justify-content: inherit;
@@ -512,7 +528,8 @@ nav li:hover::after {
         }
       }
 
-    .main {                                  // Main section.
+// Main section.
+    .main {
         text-align: center;
       }
       .main .container {
@@ -541,7 +558,8 @@ nav li:hover::after {
         grid-column: 1 / 2;
       }
 
-      .news .container {                        // News section.
+// News section.
+      .news .container {
         padding: 20% 5%;
       }
       .news .news-box {
@@ -566,7 +584,8 @@ nav li:hover::after {
         grid-column: 1 / 2;
       }
 
-      .footer {                                  // Footer section.
+// Footer section.
+      .footer {
         padding: 10% 7%;
         background: $footerBackground;
         position: relative;
