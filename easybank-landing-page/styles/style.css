@@ -51,10 +51,22 @@ h3 {
   background: none;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
-.dropdown-btn:focus {
-  outline: none;
+.sticky {
+  position: fixed;
+  width: 90%;
+}
+
+.navbar-spacer {
+  display: none;
+}
+
+.show-spacer {
+  display: block;
+  height: 3.5rem;
+  width: 100%;
 }
 
 .btn {
@@ -71,6 +83,7 @@ h3 {
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  outline: none;
   background: linear-gradient(to right, #2bb7da, #31d35c);
 }
 
@@ -81,13 +94,11 @@ h3 {
   background: linear-gradient(to right, #31d35c, #2bb7da);
 }
 
-.btn:focus {
-  outline: none;
-}
-
 nav {
+  width: 90%;
   background: white;
-  padding: 1% 7%;
+  padding: 0 7%;
+  height: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +119,7 @@ nav li {
 }
 
 nav li:hover {
-  opacity: 1.5;
+  opacity: 1;
 }
 
 nav li::after {
@@ -118,7 +129,7 @@ nav li::after {
   width: 100%;
   height: 3px;
   left: 0;
-  margin-top: 2.5rem;
+  margin-top: 2.1rem;
   opacity: 0;
 }
 
@@ -443,23 +454,31 @@ nav li:hover::after {
 }
 
 @media (max-width: 700px) {
+  a {
+    opacity: inherit;
+  }
   nav .dropdown-btn {
     display: block;
   }
   nav .dropdown-content {
-    width: 21.5%;
+    margin: 5% 7%;
+    padding: 2% 0;
     background: white;
-    position: absolute;
+    position: fixed;
     text-align: center;
     right: 0;
-    top: 95%;
+    left: 0;
     display: none;
-    z-index: 5;
+    z-index: 3;
   }
   nav .dropdown-content li {
     display: block;
-    margin: 0;
     line-height: 2rem;
+    opacity: inherit;
+  }
+  nav .dropdown-content li a {
+    font-weight: 400;
+    color: #2d314d;
   }
   nav .show {
     display: block;
