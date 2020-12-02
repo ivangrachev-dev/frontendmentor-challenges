@@ -76,6 +76,7 @@ h3 {
   background-image: url(../images/icon-close.svg);
   width: 18px;
   height: 19px;
+  margin-right: 1.8rem;
 }
 
 .btn {
@@ -104,7 +105,6 @@ h3 {
 }
 
 nav {
-  width: 90%;
   background: white;
   padding: 0 7%;
   height: 3.5rem;
@@ -152,7 +152,7 @@ nav li::after {
 
 nav li:hover::after {
   opacity: 1;
-  transition: 0.5s;
+  transition: opacity .5s ease-in-out;
 }
 
 .header {
@@ -264,6 +264,7 @@ nav li:hover::after {
 
 .footer a:hover {
   color: #55f490;
+  transition: color .3s ease-in-out;
 }
 
 .footer p {
@@ -349,12 +350,6 @@ nav li:hover::after {
   }
   nav a {
     font-size: 0.9rem;
-  }
-  .dropdown-content li:hover::after {
-    opacity: 0;
-  }
-  .dropdown-content li::after {
-    display: none;
   }
   .header .intro-background {
     right: 0;
@@ -507,6 +502,12 @@ nav li:hover::after {
   }
   nav .show {
     display: block;
+  }
+  nav .dropdown-content li:hover::after {
+    opacity: 0;
+  }
+  nav .dropdown-content li::after {
+    display: none;
   }
   .header {
     position: relative;

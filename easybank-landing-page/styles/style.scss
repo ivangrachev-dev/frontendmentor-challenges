@@ -87,6 +87,7 @@ h3 {
   background-image: url(../images/icon-close.svg);
   width: 18px;
   height: 19px;
+  margin-right: 1.8rem;
 }
 
 .btn {
@@ -119,7 +120,7 @@ h3 {
 // Nav section.
 
 nav {
-  width: 90%;
+
   background: $navbarBackground;
   padding: 0 7%;
   height: 3.5rem;
@@ -160,7 +161,7 @@ nav li::after {
 }
 nav li:hover::after {
   opacity: 1;
-  transition: 0.5s;
+  transition: opacity .5s ease-in-out;
 }
 // Header section.
 
@@ -260,6 +261,7 @@ nav li:hover::after {
     }
     a:hover {
       color: #55f490;
+      transition: color .3s ease-in-out;
     }
     p {
       color: white;
@@ -338,14 +340,6 @@ nav li:hover::after {
   }
   nav a {
     font-size: 0.9rem;
-  }
-
-  // Hiding desktop hover effect.
-  .dropdown-content li:hover::after {
-    opacity: 0;
-  }
-  .dropdown-content li::after {
-    display: none;
   }
 
  // Header section.
@@ -494,9 +488,10 @@ nav li:hover::after {
 @media (max-width: 700px) {
 
 // Dropdown-menu
-a {
-  opacity: inherit;
-}
+  a {
+    opacity: inherit;
+  }
+
    nav {
       .dropdown-btn {
         display: block;
@@ -522,13 +517,19 @@ a {
         opacity: inherit;
         margin: inherit;
       }
-
       .dropdown-content li a {
         font-weight: 400;
         color: $textColor;
       }
       .show {
         display: block;
+      }
+      // Hiding desktop hover effect.
+      .dropdown-content li:hover::after {
+        opacity: 0;
+      }
+      .dropdown-content li::after {
+        display: none;
       }
     }
 
