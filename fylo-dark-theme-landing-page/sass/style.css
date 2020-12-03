@@ -56,7 +56,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
 }
 
 h2 {
@@ -76,7 +77,17 @@ a {
   font-weight: 400;
   font-size: 0.9rem;
   color: white;
-  line-height: 0.5rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.intro-p {
+  opacity: 0.8;
+  font-size: 1rem;
 }
 
 *, *:before, *:after {
@@ -137,7 +148,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+  line-height: 3.2rem;
 }
 
 h2 {
@@ -157,7 +169,17 @@ a {
   font-weight: 400;
   font-size: 0.9rem;
   color: white;
-  line-height: 0.5rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.intro-p {
+  opacity: 0.8;
+  font-size: 1rem;
 }
 
 .header {
@@ -184,4 +206,140 @@ a {
 .header .nav__item:hover {
   opacity: 1;
   text-decoration: underline;
+}
+
+.btn {
+  color: white;
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  padding: 2% 9%;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 3.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: white;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.intro-p {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.intro {
+  background-color: #1c2431;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.intro .intro__content {
+  padding: 5% 20%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.intro .intro__content img {
+  width: 80%;
+}
+
+.intro .intro__content h1 {
+  padding: 3% 0;
+}
+
+.intro .intro__content .intro-p {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.intro .intro__content .btn {
+  margin: 3% 0;
 }

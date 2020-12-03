@@ -1,1 +1,28 @@
-// Sections.
+@import 'base';
+
+// Intro section.
+.intro {
+  background-color: $blueIntro;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .intro__content {
+    padding: 5% 20%;
+    text-align: center;
+    margin: 0 auto;
+    img {
+    width: 80%;
+    }
+    h1 {
+      padding: 3% 0;
+    }
+    .intro-p {
+      width: 85%;
+      margin: 0 auto;
+    }
+    .btn {
+      margin: 3% 0;
+    }
+  }
+}
