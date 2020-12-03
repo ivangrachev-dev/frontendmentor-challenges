@@ -1,4 +1,25 @@
 @import 'base';
 
 // Header
-// footer
+.header {
+  background-color: $blueIntro;
+  height: 8rem;
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 7%;
+  }
+  .nav__item {
+    display: inline-block;
+    margin-left: 3rem;
+    opacity: .7;
+    transition: opacity .5s ease-in-out;
+   &:hover{
+    opacity: 1;
+    text-decoration: underline;
+   }
+  }
+}

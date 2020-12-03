@@ -26,12 +26,12 @@ $white: hsl(0, 0%, 100%); // white.
 
 // Headings, Call-to-actions, Header Navigation
 
-$headingText: 'Raleway', sans-serif;
+$headingFont: 'Raleway', sans-serif;
 // Weights: 400, 700
 
 // Body
 
-$bodyText: 'Open Sans', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
 // Weights: 400, 700
 
 // *******
@@ -60,10 +60,15 @@ footer, header, nav, section, main{
 
 body{
     line-height: 1;
+    color: $white;
 }
 
 ol, ul{
     list-style: none;
+}
+
+a{
+  text-decoration: none;
 }
 
 blockquote, q{
@@ -88,6 +93,38 @@ input{
 // ************
 // Type Specs
 // ************
+
+h1, h2, h3, h4 {
+  font-family: $headingFont;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+a {
+  font-family: $headingFont;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: $white;
+  line-height: 0.5rem;
+}
+
+
+
 
 // .t-mobile-nav (font-weight, size, height, spacing, color)
 // .t-h1
