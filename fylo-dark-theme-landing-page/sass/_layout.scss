@@ -18,11 +18,33 @@
       padding: 3% 0;
     }
     .intro-p {
-      width: 85%;
+      width: 80%;
       margin: 0 auto;
     }
     .btn {
       margin: 3% 0;
+    }
+  }
+}
+
+// Features section.
+
+.features {
+  background-color: $blueMain;
+  .features__box {
+    padding: 5% 0;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    .features__item {
+      margin: auto;
+    }
+    h3 {
+      padding: 3% 0;
     }
   }
 }
