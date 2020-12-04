@@ -114,120 +114,10 @@ p {
   font-size: 0.6rem;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
-}
-
-footer, header, nav, section, main {
-  display: block;
-}
-
-body {
-  line-height: 1;
-  color: white;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-h1, h2, h3, h4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.3rem;
-  line-height: 3.2rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 0.7rem;
-  opacity: 0.8;
-}
-
-a {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: white;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-
-.intro-p {
-  opacity: 0.9;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-}
-
-.features-p {
+.cta-p {
   opacity: 0.8;
   font-size: 0.9rem;
   line-height: 1.5rem;
-}
-
-.product-p {
-  opacity: 0.8;
-  font-size: 1rem;
-  line-height: 1.6rem;
-}
-
-.testim-p {
-  opacity: 0.8;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-}
-
-.credentials-p {
-  opacity: 0.7;
-  font-size: 0.6rem;
 }
 
 .header {
@@ -317,120 +207,46 @@ p {
   background: white;
 }
 
-*, *:before, *:after {
-  box-sizing: border-box;
+.cta {
+  position: absolute;
+  width: 100%;
+  background-color: #0b1523;
 }
 
-html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: none;
+.cta__box {
+  background-color: #1c2431;
+  width: 70%;
+  margin: -10% auto 0;
+  padding: 3% 5%;
+  text-align: center;
+  border-radius: .5rem;
+  -webkit-box-shadow: 12px 12px 5px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 12px 12px 5px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 5px -4px rgba(0, 0, 0, 0.2);
 }
 
-footer, header, nav, section, main {
-  display: block;
+.cta__box .cta-p {
+  padding: 3% 10%;
 }
 
-body {
-  line-height: 1;
-  color: white;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.cta__box .btn {
+  padding: 1.4% 3%;
+  font-size: 0.9rem;
+  margin-left: 2%;
 }
 
 input {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-h1, h2, h3, h4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.3rem;
-  line-height: 3.2rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 0.7rem;
-  opacity: 0.8;
-}
-
-a {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  border-radius: 4rem;
+  padding: 1.4% 4%;
+  outline: none;
+  border: none;
+  width: 65%;
   font-size: 0.9rem;
-  color: white;
 }
 
-p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
-
-.intro-p {
-  opacity: 0.9;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-}
-
-.features-p {
-  opacity: 0.8;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-}
-
-.product-p {
-  opacity: 0.8;
-  font-size: 1rem;
-  line-height: 1.6rem;
-}
-
-.testim-p {
-  opacity: 0.8;
-  font-size: 0.9rem;
-  line-height: 1.5rem;
-}
-
-.credentials-p {
-  opacity: 0.7;
-  font-size: 0.6rem;
+.footer {
+  padding: 10% 0;
+  background-color: #0b1523;
 }
 
 .intro {
@@ -512,7 +328,7 @@ p {
 
 .testimonials .testimonials__box {
   position: relative;
-  padding: 7% 0 3%;
+  padding: 7% 0 30%;
   width: 90%;
   margin: 0 auto;
   display: grid;
@@ -552,5 +368,5 @@ p {
   position: absolute;
   z-index: 1;
   left: -0.7%;
-  top: 18%;
+  top: 9%;
 }

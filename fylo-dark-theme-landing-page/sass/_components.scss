@@ -1,6 +1,5 @@
-@import 'base';
+// Header.
 
-// Header
 .header {
   background-color: $blueIntro;
   height: 8rem;
@@ -24,9 +23,8 @@
   }
 }
 
-// Footer
+// Buttons.
 
-// Buttons
 .btn {
   color: $white;
   background: linear-gradient(to right, $cyan, $blue);
@@ -43,6 +41,8 @@
     transition: .3s ease-in-out;
   }
 }
+
+// Links.
 
 .product__link {
   color: $cyan;
@@ -83,4 +83,48 @@
 
 .product__link:hover::after {
   background: $white;
+}
+
+// CTA section.
+
+.cta {
+  position: absolute;
+  width: 100%;
+  background-color: $blueFooter;
+}
+
+.cta__box {
+  background-color: $blueIntro;
+  width: 70%;
+  margin: -10% auto 0;
+  padding: 3% 5% ;
+  text-align: center;
+  border-radius: .5rem;
+  -webkit-box-shadow: 12px 12px 5px -4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 12px 12px 5px -4px rgba(0,0,0,0.2);
+  box-shadow: 12px 12px 5px -4px rgba(0,0,0,0.2);
+  .cta-p {
+    padding: 3% 10%;
+  }
+  .btn {
+    padding: 1.4% 3%;
+    font-size: 0.9rem;
+    margin-left: 2%;
+  }
+}
+
+input {
+  border-radius: 4rem;
+  padding: 1.4% 4%;
+  outline: none;
+  border: none;
+  width: 65%;
+  font-size: 0.9rem;
+}
+
+// Footer section.
+
+.footer {
+  padding: 10% 0;
+  background-color: $blueFooter;
 }
