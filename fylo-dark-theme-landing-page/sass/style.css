@@ -69,7 +69,8 @@ h3 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  opacity: 0.8;
 }
 
 a {
@@ -100,6 +101,17 @@ p {
   opacity: 0.8;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+
+.testim-p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.credentials-p {
+  opacity: 0.7;
+  font-size: 0.6rem;
 }
 
 *, *:before, *:after {
@@ -173,7 +185,8 @@ h3 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  opacity: 0.8;
 }
 
 a {
@@ -204,6 +217,17 @@ p {
   opacity: 0.8;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+
+.testim-p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.credentials-p {
+  opacity: 0.7;
+  font-size: 0.6rem;
 }
 
 .header {
@@ -364,7 +388,8 @@ h3 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  opacity: 0.8;
 }
 
 a {
@@ -395,6 +420,17 @@ p {
   opacity: 0.8;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+
+.testim-p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.credentials-p {
+  opacity: 0.7;
+  font-size: 0.6rem;
 }
 
 .intro {
@@ -468,4 +504,53 @@ p {
 
 .product .product-p {
   margin-top: 5%;
+}
+
+.testimonials {
+  background-color: #181f2a;
+}
+
+.testimonials .testimonials__box {
+  position: relative;
+  padding: 7% 0 3%;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  grid-gap: 5rem;
+}
+
+.testimonials .testimonials__box .testimonials__item {
+  position: relative;
+  z-index: 2;
+  background-color: #202a3c;
+  padding: 10% 7% 7%;
+  border-radius: .3rem;
+}
+
+.testimonials__row {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  margin-top: 7%;
+}
+
+.testimonials__row .testimonials__img {
+  width: 13%;
+  border-radius: 100%;
+}
+
+.testimonials__row .testimonials__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 4%;
+}
+
+.testimonials__bg {
+  position: absolute;
+  z-index: 1;
+  left: -0.7%;
+  top: 18%;
 }
