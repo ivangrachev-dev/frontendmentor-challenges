@@ -137,7 +137,7 @@ p {
 .header .nav__item {
   display: inline-block;
   margin-left: 3rem;
-  opacity: .6;
+  opacity: 0.6;
   transition: opacity .5s ease-in-out;
 }
 
@@ -148,7 +148,7 @@ p {
 
 .btn {
   color: white;
-  background: linear-gradient(to right, #65e2d9, #339ecc);
+  background-color: #339ecc;
   padding: 2% 9%;
   border-radius: 2rem;
   outline: none;
@@ -157,11 +157,11 @@ p {
   font-size: 1.3rem;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  transition: background-color .5s ease-in-out;
 }
 
 .btn:hover {
-  filter: contrast(145%);
-  transition: .3s ease-in-out;
+  background-color: #65e2d9;
 }
 
 .product__link {
@@ -175,6 +175,7 @@ p {
   margin-top: 5%;
   line-height: 1.5rem;
   position: relative;
+  transition: opacity .3s ease-in-out, color .3s ease-in-out;
 }
 
 .product__link::after {
@@ -200,11 +201,12 @@ p {
 .product__link:hover, .product__link:hover::after {
   color: white;
   opacity: 1;
-  transition: .5s ease-in-out;
 }
 
 .product__link:hover::after {
   background: white;
+  opacity: 1;
+  transition: background .3s ease-in-out;
 }
 
 .cta {
