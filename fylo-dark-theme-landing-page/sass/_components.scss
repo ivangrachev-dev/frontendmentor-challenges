@@ -88,6 +88,51 @@
   background: $white;
 }
 
+// Dropdown menu.
+
+.dropdown__btn {
+  display: none;
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.fa-bars {
+  color: $white;
+}
+
+@media (max-width: 800px) {
+  .dropdown__btn {
+    display: block;
+  }
+  .nav__menu {
+    position: absolute;
+    display: none;
+    background-color: $white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 5% 30%;
+    .nav__item {
+      margin: inherit;
+      display: block;
+      opacity: 1;
+      &:hover {
+        text-decoration: inherit;
+      }
+      a {
+        color: black;
+      }
+     }
+   }
+}
+
+.show {
+  display: block;
+}
+
 // CTA section.
 
 .cta {
