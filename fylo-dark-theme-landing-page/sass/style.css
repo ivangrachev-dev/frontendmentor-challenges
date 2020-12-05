@@ -66,6 +66,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h4 {
@@ -233,6 +234,12 @@ p {
   box-shadow: 0.5rem 0.5rem 0.5rem -0.1rem rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 1110px) {
+  .cta__box {
+    margin: -15% auto 0;
+  }
+}
+
 .cta__box .cta-p {
   padding: 3% 10%;
 }
@@ -315,6 +322,14 @@ input {
   margin-right: 1rem;
 }
 
+@media (max-width: 950px) {
+  .social__link {
+    display: block;
+    margin: inherit;
+    text-align: center;
+  }
+}
+
 .intro {
   background-color: #1c2431;
   background-image: url(../images/bg-curvy-desktop.svg);
@@ -359,21 +374,24 @@ input {
   justify-content: space-between;
   align-items: baseline;
   text-align: center;
-}
-
-.features .features__box .features__item {
-  margin: auto;
+  grid-gap: 2rem;
 }
 
 .features .features__box h3 {
   padding: 3% 0;
 }
 
+@media (max-width: 890px) {
+  .features .features__box {
+    grid-template-columns: auto;
+  }
+}
+
 .product {
   background-color: #181f2a;
 }
 
-.product .container {
+.product .product__box {
   padding: 5% 0;
   width: 90%;
   margin: 0 auto;
@@ -384,8 +402,26 @@ input {
   column-gap: 4rem;
 }
 
-.product .product-p {
+.product .product__box .product__image img {
+  width: 100%;
+}
+
+.product .product__box .product-p {
   margin-top: 5%;
+}
+
+@media (max-width: 890px) {
+  .product .product__box {
+    grid-template-columns: auto;
+    row-gap: 2rem;
+  }
+  .product .product__box .product__image {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .product .product__box .product__content .product-p {
+    margin-top: 3%;
+  }
 }
 
 .testimonials {
@@ -414,6 +450,19 @@ input {
   box-shadow: 0.5rem 0.5rem 0.5rem -0.1rem rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 890px) {
+  .testimonials .testimonials__box {
+    grid-template-columns: auto;
+    row-gap: 4rem;
+  }
+  .testimonials .testimonials__box .testimonials__item {
+    padding: 5% 3% 3%;
+  }
+  .testimonials .testimonials__box .testimonials__item .testimonials__row {
+    margin-top: 3%;
+  }
+}
+
 .testimonials__row {
   display: inline-flex;
   justify-content: flex-start;
@@ -437,12 +486,24 @@ input {
   position: absolute;
   z-index: 1;
   left: -0.7%;
-  top: 9%;
+  top: 7%;
+}
+
+@media (max-width: 1300px) {
+  .testimonials__bg {
+    top: 3%;
+  }
+}
+
+@media (max-width: 930px) {
+  .testimonials__bg {
+    top: 0;
+  }
 }
 
 .testimonials__item {
   transform: translate(0, 0);
-  transition: transform .4s ease-in-out;
+  transition: transform .3s ease-in-out;
 }
 
 .testimonials__item:hover {

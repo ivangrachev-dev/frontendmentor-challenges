@@ -39,12 +39,16 @@
     justify-content: space-between;
     align-items: baseline;
     text-align: center;
-    .features__item {
-      margin: auto;
-    }
+    grid-gap: 2rem;
     h3 {
       padding: 3% 0;
     }
+  }
+}
+
+@media (max-width: 890px) {
+  .features .features__box {
+    grid-template-columns: auto;
   }
 }
 
@@ -52,7 +56,7 @@
 
 .product {
   background-color: $blueMain;
-  .container {
+  .product__box {
     padding: 5% 0;
     width: 90%;
     margin: 0 auto;
@@ -61,10 +65,27 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 4rem;
+    .product__image img {
+      width: 100%;
     }
     .product-p {
     margin-top: 5%;
     }
+  }
+}
+
+@media (max-width: 890px) {
+  .product .product__box {
+    grid-template-columns: auto;
+    row-gap: 2rem;
+    .product__image {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .product__content .product-p{
+      margin-top: 3%;
+    }
+  }
 }
 
 // Testimonials section.
@@ -93,6 +114,19 @@
   }
 }
 
+@media (max-width: 890px) {
+  .testimonials .testimonials__box {
+    grid-template-columns: auto;
+    row-gap: 4rem;
+    .testimonials__item {
+      padding: 5% 3% 3%;
+      .testimonials__row {
+        margin-top: 3%;
+      }
+    }
+  }
+}
+
 .testimonials__row {
   display: inline-flex;
   justify-content: flex-start;
@@ -114,14 +148,25 @@
   position: absolute;
   z-index: 1;
   left: -0.7%;
-  top: 9%;
+  top: 7%;
+  @media (max-width:1300px) {
+    & {
+      top: 3%;
+    }
+  }
+  @media (max-width:930px) {
+    & {
+      top: 0;
+    }
+  }
 }
+
 
 // Testimonials animations.
 
 .testimonials__item {
   transform: translate(0, 0);
-  transition: transform .4s ease-in-out;
+  transition: transform .3s ease-in-out;
   &:hover {
     transform: translate(0, -1.3rem);
   }

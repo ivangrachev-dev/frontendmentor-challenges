@@ -108,6 +108,11 @@
   -webkit-box-shadow: .5rem .5rem .5rem -.1rem rgba(0,0,0,0.15);
   -moz-box-shadow: .5rem .5rem .5rem -.1rem rgba(0,0,0,0.15);
   box-shadow: .5rem .5rem .5rem -.1rem rgba(0,0,0,0.15);
+  @media (max-width: 1110px) {
+    & {
+      margin: -15% auto 0;
+    }
+  }
   .cta-p {
     padding: 3% 10%;
   }
@@ -146,17 +151,18 @@ input {
 }
 
 // Font Awesome icons
-  .fab {
-    font-size: 1.5rem;
-    transition: color .5s ease-in-out;
-   &:hover {
-     color: $cyanHover;
-   }
+.fab {
+  font-size: 1.5rem;
+  transition: color .5s ease-in-out;
+  &:hover {
+    color: $cyanHover;
   }
-  .fas, .far {
-    font-size: 1.2rem;
-  }
+}
+.fas, .far {
+  font-size: 1.2rem;
+}
 //
+
 .footer__box {
   display: grid;
   grid-template-columns: 35% 20% 10% 10% 15%;
@@ -184,4 +190,11 @@ input {
 .social__link {
   display: inline-block;
   margin-right: 1rem;
+  @media (max-width:950px) {
+    & {
+      display: block;
+      margin: inherit;
+      text-align: center;
+    }
+  }
 }
