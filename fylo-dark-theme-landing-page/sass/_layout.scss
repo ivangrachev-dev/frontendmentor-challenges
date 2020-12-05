@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .features .features__box {
     grid-template-columns: auto;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .product .product__box {
     grid-template-columns: auto;
     row-gap: 2rem;
@@ -114,7 +114,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .testimonials .testimonials__box {
     grid-template-columns: auto;
     row-gap: 4rem;
@@ -155,7 +155,7 @@
       top: 3%;
     }
   }
-  @media (max-width:950px) {
+  @media (max-width:970px) {
     & {
       top: 0;
     }

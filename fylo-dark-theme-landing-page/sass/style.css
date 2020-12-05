@@ -182,7 +182,7 @@ p {
   margin-top: 5%;
   line-height: 1.5rem;
   position: relative;
-  transition: opacity .3s ease-in-out, color .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .product__link::after {
@@ -195,6 +195,7 @@ p {
   left: 0;
   bottom: 0;
   margin-top: 3%;
+  transition: .3s ease-in-out;
 }
 
 .product__link img {
@@ -212,8 +213,6 @@ p {
 
 .product__link:hover::after {
   background: white;
-  opacity: 1;
-  transition: background .3s ease-in-out;
 }
 
 .cta {
@@ -259,27 +258,31 @@ input {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .cta__box {
     margin: -20% auto 0;
     width: 50%;
   }
-  .cta__box .btn {
-    width: 100%;
-    margin-left: inherit;
-    margin-top: 3%;
-  }
   .cta__box .cta-p {
     padding: 3% 0;
   }
+  .cta__box .btn {
+    width: 100%;
+    height: auto;
+    margin-left: inherit;
+    margin-top: 3%;
+    font-size: 1.5rem;
+  }
   input {
     width: 100%;
+    height: auto;
+    font-size: 1.5rem;
   }
 }
 
-@media (max-width: 864px) {
+@media (max-width: 875px) {
   .cta__box {
-    margin: -25% auto 0;
+    margin: -30% auto 0;
   }
 }
 
@@ -291,7 +294,7 @@ input {
 .footer a {
   line-height: 2rem;
   opacity: 0.8;
-  transition: opacity .5s ease-in-out;
+  transition: opacity .3s ease-in-out;
 }
 
 .footer a:hover {
@@ -304,7 +307,7 @@ input {
 
 .fab {
   font-size: 1.5rem;
-  transition: color .5s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .fab:hover {
@@ -323,9 +326,9 @@ input {
   align-items: baseline;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .footer__box {
-    grid-template-columns: 70%;
+    grid-template-columns: 60%;
   }
 }
 
@@ -352,10 +355,8 @@ input {
   margin-right: 1rem;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .social__link {
-    display: block;
-    margin: inherit;
     text-align: center;
   }
 }
@@ -411,7 +412,7 @@ input {
   padding: 3% 0;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .features .features__box {
     grid-template-columns: auto;
   }
@@ -440,7 +441,7 @@ input {
   margin-top: 5%;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .product .product__box {
     grid-template-columns: auto;
     row-gap: 2rem;
@@ -480,7 +481,7 @@ input {
   box-shadow: 0.5rem 0.5rem 0.5rem -0.1rem rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .testimonials .testimonials__box {
     grid-template-columns: auto;
     row-gap: 4rem;
@@ -526,7 +527,7 @@ input {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 970px) {
   .testimonials__bg {
     top: 0;
   }
