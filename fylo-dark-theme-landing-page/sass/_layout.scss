@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 950px) {
   .features .features__box {
     grid-template-columns: auto;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 950px) {
   .product .product__box {
     grid-template-columns: auto;
     row-gap: 2rem;
@@ -114,16 +114,17 @@
   }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 950px) {
   .testimonials .testimonials__box {
     grid-template-columns: auto;
     row-gap: 4rem;
+    padding: 7% 0 40%;
     .testimonials__item {
       padding: 5% 3% 3%;
+    }
       .testimonials__row {
         margin-top: 3%;
       }
-    }
   }
 }
 
@@ -154,7 +155,7 @@
       top: 3%;
     }
   }
-  @media (max-width:930px) {
+  @media (max-width:950px) {
     & {
       top: 0;
     }
